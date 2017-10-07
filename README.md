@@ -23,6 +23,8 @@
 		6. fonts
 			- adobe-source-code-pro-fonts
 			- ttf-hack
+			- ttf-font-awesome
+			- siji-git
 		7. themes
 			- paper-gtk-theme-git
 		8. icons
@@ -32,13 +34,14 @@
 			- zathura
 			- zathura-pdf-poppler
 		11. ntfs-3g
-		12. feh??
-		13. 
-- Uninstall Applications
-	* mousepad
-	* xcf burn
-	* nitrogen??
-	* 
+		12. feh
+		13. imagemagick
+		14. dmenu
+- Uninstall Applications 
+	* mousepad (rm .config/Mousepad)
+	* xfburn (rm ~/.config/xfburn)
+	* nitrogen (rm ~/.config/nitrogen)
+	* lxterminal (rm ~/.config/lxterminal)
 
 - problems
 	1. shut down periodically: suspected Intel ME, AMT stuff.
