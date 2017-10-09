@@ -11,7 +11,7 @@ volumeicon &
 tint2 &
 
 # Notifications
-#dunst -conf ~/.config/dunst/dunstrc &
+dunst -conf ~/.config/dunst/dunstrc &
 
 # Dock
 plank &
