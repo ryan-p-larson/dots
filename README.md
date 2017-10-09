@@ -51,4 +51,34 @@
 - problems
 	1. shut down periodically: suspected Intel ME, AMT stuff.
 	2. programmatic dotfiles
+
+
+pacman -Qqen > pkglist.txt
+To install:
+pacman -S - < pkglist.txt
+To skip already installed packages, use --needed.
+
+
+
+
+
+
+
+
+
+Pacman
+intel-ucode
+stow
+adobe-source-code-pro-fonts
+ttf-hack
+xorg-xfontsel
+zathura
+zathura-pdf-poppler
+dunst
 	
+Yaourt:
+rvxt-unicode-pixbuf
+paper-icon-theme-git
+paper-gtk-theme-git
+siji-git
+sublime-text-dev
