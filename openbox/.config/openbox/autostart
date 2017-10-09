@@ -1,17 +1,17 @@
 # wallpaper
-# feh
+feh --bg-tile ~/Pictures/patterns/low_contrast_linen.png &
 
 # Volume indicator
 volumeicon &
 
 # Screen compositing
-compton --config ~/.config/compton.conf -b &
+#compton --config ~/.config/compton.conf -b &
 
 # Taskbar
 tint2 &
 
 # Notifications
-dunst -conf ~/.config/dunst/dunstrc &
+#dunst -conf ~/.config/dunst/dunstrc &
 
 # Dock
 plank &
