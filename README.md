@@ -17,7 +17,7 @@
 	* round up
 		1. intel-ucode
 		2. gnu stow
-		3. sublime-text-dev
+		3. sublime-text-dev (package control)
 		4. rxvt-unicode-pixbuf
 		5. tree
 		6. fonts
@@ -36,7 +36,12 @@
 		11. ntfs-3g
 		12. feh
 		13. imagemagick
-		14. dmenu
+		14. python-pywal
+		15. dunst
+		16. dmenu (???)
+		17. bash-completion	
+
+		
 - Uninstall Applications 
 	* mousepad (rm .config/Mousepad)
 	* xfburn (rm ~/.config/xfburn)
