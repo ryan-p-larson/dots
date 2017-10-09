@@ -25,4 +25,3 @@ lxpolkit &
 # Updates
 sleep 5s && kalu &
 
-exec ~/.dots/bin/me.sh
