@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Material Theme",
+    "editor.cursorStyle": "block-outline",
+    "editor.cursorWidth": 10,
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "eq-material-theme-icons",
+    // Controls the font family.
+    "editor.fontFamily": "Monaco",
+    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+    "editor.lineHeight": 20,
+    // Enables font ligatures
+    "editor.fontLigatures": true,
+    // Controls if file decorations should use badges.
+    //"explorer.decorations.badges": false,
+    "window.zoomLevel": -1,
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.renderCharacters": false,
+    "editor.fontSize": 13,
+    "editor.minimap.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/.idea": true
+
+    },
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Darker High Contrast",
+        "accentPrevious": "Acid Lime",
+        "accent": "Graphite"
+    },
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#616161",
+        "list.activeSelectionForeground": "#616161",
+        "list.inactiveSelectionForeground": "#616161",
+        "list.highlightForeground": "#616161",
+        "scrollbarSlider.activeBackground": "#61616150",
+        "editorSuggestWidget.highlightForeground": "#616161",
+        "textLink.foreground": "#616161",
+        "progressBar.background": "#616161",
+        "pickerGroup.foreground": "#616161",
+        "tab.activeBorder": "#616161"
+    }
+}

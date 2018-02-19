@@ -1,0 +1,32 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        // Toggle menu bar
+        "key": "ctrl+alt+m",
+        "command": "workbench.action.toggleMenuBar"
+    },
+    {   
+        // Toggle status bar
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        // Toggle sidebar
+        "key": "ctrl+\\",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        // Split into 2 columns
+        "key": "alt+shift+2",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        // Combine split
+        "key": "alt+shift+1",
+        "command": "editor.emmet.action.splitJoinTag"
+    }
+]
