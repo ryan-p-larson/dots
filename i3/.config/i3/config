@@ -1,0 +1,251 @@
+
+
+## I3 BINDINGS ---------------------------------------------------------------
+set $mod Mod4
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+bindsym $mod+Shift+c reload                 # reload the configuration file
+bindsym $mod+Shift+r restart                # restart i3 inplace 
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Exit' 'i3-msg exit'"
+
+# split in horizontal orientation
+bindsym $mod+h split h                 
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for focused
+bindsym $mod+f fullscreen toggle
+
+# smarter fullscreen pop ups
+popup_during_fullscreen smart
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+
+## OS BINDINGS ---------------------------------------------------------------
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# kill window
+bindsym $mod+Shift+q kill
+
+# start dmenu
+bindsym $mod+d exec ~/.local/bin/dmenu.sh
+
+# Dmenu hot launcher
+bindsym $mod+Shift+d exec ~/.local/bin/dmenu-launcher.sh
+
+# File explorer
+bindsym $mod+e exec pcmanfm
+
+# Window switcher
+bindsym $mod+Tab exec skippy-xd
+bindsym $mod+grave exec skippy-xd
+
+# Brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20     # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20   # decrease screen brightness
+
+# Audio keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% 
+bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle
+
+
+## FOCUSING + MOVING ---------------------------------------------------------
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+## WORKSPACES ----------------------------------------------------------------
+# Switch workspaces
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Move container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+
+## APPEARANCE --------------------------------------------------------------------
+# colors
+set_from_resource $black	color0		#2d2d2d
+set_from_resource $black2   color11
+set_from_resource $white	color15		#eeeeee
+set_from_resource $blue		color6		#000000
+set $transparent 			#00000000
+set $lumiere                #fd7980
+
+# Window            border      Background      Text        Indicator       Child Border
+client.focused      $white      $white          $black      $white          $white
+client.unfocused    $black2     $black2         $white      $blue           $black2
+
+# Window border: 1px
+new_window pixel 5
+
+# Font for window/statusbar titles. Default = font pango:monospace 8
+font pango:DejaVu Sans Mono 8
+
+
+## RESIZE WINDOW -------------------------------------------------------------
+mode "resize" {
+    # These bindings trigger as soon as you enter the resize mode
+
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym j resize shrink width 15 px or 15 ppt
+    bindsym k resize grow height 15 px or 15 ppt
+    bindsym l resize shrink height 15 px or 15 ppt
+    bindsym semicolon resize grow width 15 px or 15 ppt
+
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 30 px or 30 ppt
+    bindsym Down resize grow height 30 px or 30 ppt
+    bindsym Up resize shrink height 30 px or 30 ppt
+    bindsym Right resize grow width 30 px or 30 ppt
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+
+## FLOATING WINDOWS ----------------------------------------------------------
+for_window [floating] bindsym $mod+Shift+h      move left 15px or 15ppt
+for_window [floating] bindsym $mod+Shift+j      move down 15px or 15ppt
+for_window [floating] bindsym $mod+Shift+k      move up 15px or 15ppt
+for_window [floating] bindsym $mod+Shift+l      move right 15px or 15ppt
+
+for_window [floating] bindsym $mod+Shift+Left   move left 30px or 30ppt
+for_window [floating] bindsym $mod+Shift+Down   move down 30px or 30ppt
+for_window [floating] bindsym $mod+Shift+Up     move up 30px or 30ppt
+for_window [floating] bindsym $mod+Shift+Right  move right 30px or 30ppt
+
+
+## BAR -----------------------------------------------------------------------
+bar {
+    status_command i3status -c ~/.config/i3/i3status.conf
+	position top
+    tray_padding 2
+	
+	colors {
+        background $black
+        statusline $white
+
+    	# Workspace			Border			Background		Text
+    	focused_workspace	$transparent	$lumiere		$black	
+    	inactive_workspace	$transparent	$white	        $black
+    	active_workspace	$transparent	$black	        $white
+	}
+}
+
+
+## SCRATCHPAD ----------------------------------------------------------------
+# Make focused scratchpad
+bindsym $mod+equal move scratchpad
+
+# Show 1st scratchpad
+bindsym $mod+minus scratchpad show
+
+# Quickly view Pushbullet (?)
+bindsym $mod+Shift+p [class="PB for Desktop"] scratchpad show
+
+#bindsym $mod+minus+m [title="Thunderbird"] scratchpad show # Show Mail in scratchpad
+
+
+## WINDOW RULES --------------------------------------------------------------
+for_window [window_role="pop-up"]               floating enable
+for_window [window_role="bubble"]               floating enable
+for_window [window_role="task_dialog"]          floating enable
+for_window [window_role="Preferences"]          floating enable
+
+for_window [window_type="dialog"]               floating enable
+for_window [window_type="menu"]                 floating enable
+
+for_window [class="(?i)urxvt"]                  floating enable
+for_window [class="Chromium" id="JupyterLab"]   floating disable
+for_window [class="Pamac-manager"]              floating enable
+for_window [class="Kalu"]                       floating enable
+for_window [class="pcmanfm"]                    floating enable
+for_window [class="PB for Desktop"]				floating enable
+for_window [class="Transmission"]				floating enable
+
+assign [class="Transmission"] → 4
+
+
+## AUTOSTART -----------------------------------------------------------------
+exec --no-startup-id dunst -c ~/.config/dunst/dunstrc		# Notifications
+
+#exec --no-startup-id nitrogen --restore						# Wallpaper
+exec --no-startup-id feh --bg-tile ~/.dots/Pictures/patterns/pw_maze_white.png
+
+exec --no-startup-id conky -dc ~/.config/conky.conf			# HUD
+exec --no-startup-id lxpolkit								# LX Policies
+exec --no-startup-id lxsession								# LX Settings (GTK, etc)
+exec --no-startup-id compton --shadow-exclude 'g:e:Conky'   # Window compositor
+
+# Open a terminal and move it to the scratchpad
+# Resizing: [instance="scratchterm"] scratchpad show; move position 0px 20px; resize shrink height 200px; resize grow width 663px; move scratchpad
+exec --no-startup-id urxvt -name scratchterm -e tmux
+for_window [instance="scratchterm"] move scratchpad
+
+# Open firefox in WS #2.
+exec --no-startup-id i3-msg "workspace 2; exec firefox; workspace 1"
+
+
+## UNUSED --------------------------------------------------------------------
+# exec --no-startup-id volumeicon               # Volume icon in tray
+
+#bindsym $mod+a focus parent                    # focus the parent container
+#bindsym $mod+d focus Child                     # focus the child container
+
+#bindsym $mod+s layout stacking                 # Layout: stacking
+#bindsym $mod+w layout tabbed                   # Layout: tabbed
+#bindsym $mod+e layout toggle split             # Layout: split
