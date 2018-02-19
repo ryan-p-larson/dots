@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/base16-google-light (SL).tmTheme",
+	"detect_indentation": true,
+	"enable_tab_scrolling": false,
+	"font_size": 9,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"overlay_scroll_bars": "enabled",
+	"theme": "Spacegray Light.sublime-theme"
+}

@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Base16 Color Schemes",
+		"Color Highlighter",
+		"Markdown Extended",
+		"MarkdownLivePreview",
+		"Package Control",
+		"PyYapf Python Formatter",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"Theme - Spacegray"
+	]
+}
