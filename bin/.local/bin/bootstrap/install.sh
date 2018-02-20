@@ -12,7 +12,6 @@ mv ~/.bashrc ~/.bashrc.bak		# Backup, stow will give us error
 stow home				# Bash, Xresources, modmap
 stow bin				# local/bin
 
-
 stow compton				# Window compositor
 stow conky				# Information manager
 stow dunst				# Notifications
@@ -27,6 +26,7 @@ stow jupyter			# Jupyter notebook
 stow sublime			# Visual Text editor
 
 mv ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini.bak
+mv ~/.gtkrc-2.0 ~/.gtkrc-2.0.bak
 stow gtk				# GTK settings
 
 #stow mozilla			# Custom firefox
