@@ -1,7 +1,7 @@
 " TABS -----------------------------------------------------------------------
 set tabstop=4			" spaces per tab
 set softtabstop=4		" spaces when editing
-"set expandtab			" tabs are spaces
+set expandtab			" tabs are spaces
 filetype indent on		" Filetype-specific indentation
 
 " USER INTERFACE -------------------------------------------------------------
@@ -11,6 +11,7 @@ set number				" Show line numbers
 set cursorline			" Highlight cursor line
 set wildmenu			" Visual autocomplete for commands
 highlight clear LineNr	" Clear line number highlighting
+set showmatch			" Highlight matching [{()}]
 
 " SEARCH ---------------------------------------------------------------------
 
