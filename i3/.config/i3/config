@@ -54,10 +54,13 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20     # increase screen bright
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20   # decrease screen brightness
 
 # Audio keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% 
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% 
-bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle
-
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% 
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% 
+#bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute 0 toggle
+# Audio control
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.local/bin/volume.sh up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.local/bin/volume.sh down
+bindsym XF86AudioMute exec --no-startup-id ~/.local/bin/volume.sh mute
 
 ## FOCUSING + MOVING ---------------------------------------------------------
 # change focus
@@ -222,9 +225,7 @@ assign [class="Transmission"] → 4
 
 ## AUTOSTART -----------------------------------------------------------------
 exec --no-startup-id dunst -c ~/.config/dunst/dunstrc		# Notifications
-
-#exec --no-startup-id nitrogen --restore						# Wallpaper
-exec --no-startup-id feh --bg-tile ~/Pictures/patterns/pw_maze_white.png
+exec --no-startup-id feh --bg-tile ~/Pictures/patterns/pw_maze_black.png
 
 exec --no-startup-id conky -dc ~/.config/conky/conky.conf	# HUD
 exec --no-startup-id lxpolkit								# LX Policies
