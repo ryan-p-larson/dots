@@ -7,10 +7,10 @@
 ##### Preview
 
 Clean.
-![Clean](wallpapers/Pictures/scrots/clean.png)
+![Clean](wallpapers/Pictures/scrots/01-clean.png)
 
 Editor.
-![Vim](wallpapers/Pictures/scrots/editor.png)
+![Vim](wallpapers/Pictures/scrots/02-editor.png)
 
 ##### Installed Programs
 
