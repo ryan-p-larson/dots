@@ -4,6 +4,13 @@
 
 ---
 
+##### Preview
+
+Clean.
+![Clean](wallpapers/Pictures/scrots/clean.png)
+
+Editor.
+![Vim](wallpapers/Pictures/scrots/editor.png)
 
 ##### Installed Programs
 
