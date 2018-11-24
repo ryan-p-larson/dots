@@ -1,141 +1,43 @@
 # Dotfiles
 
-### Arch Laptop i3wm
+*Macbook Pro (2011)*
 
----
+### Installed Programs
 
-##### Preview
+| | |
+|---|---|
+| OS | Arch Linux |
+| Window Manager | I3 |
+| Compositor | Compton |
+| Terminal | URxvt |
+| Terminal Font | Gohu Font @ `11px, -4 letterSpacing` |
+| Info | neofetch |
+| File Manager | Thunar |
+| Notifications | Dunst |
+| GTK[2/3] Theme | Materia-dark-compact |
+| GTK[2/3] Icons | Paper |
+| Status Bar | Polybar |
+| Launcher | Rofi |
+| PDF Viewer | Zathura |
+| Editor | VS Code, Vim |
+
+### Preview
 
 Clean.
-![Clean](wallpapers/Pictures/scrots/01-clean.png)
+![Clean](.screens/01-clean.png)
 
-Editor.
-![Vim](wallpapers/Pictures/scrots/02-editor.png)
+Floating.
+![Floating windows](.screens/03-floating.png)
 
-##### Installed Programs
+Editing.
+![Editing using Visual Studio Code, Vim](.screens/04-editing.png)
 
-| Program/Package | Purpose | Source |
-|-----------------|---------|--------|
-| i3wm | Window Manager | AUR |
-| feh | Photo viewer/wallpaper | AUR |
-| urxvt | Terminal | AUR |
-| tmux | Terminal Emulator | ? |
-| conky | Heads Up Display | AUR |
-| pamac-\* | Updates | AUR? |
-| Transmission | Torrents | ? |
-| PcManFM | File Manager | ? |
-| lxsession | LX Settings | ? |
-| compton | Window Compositor | ? |
-| dunst | Notifications | ? |
-| dmenu | Launcher | ? |
-| PB for Desktop | Pushbullet: messaging + universal notifications | Yaourt |
-| xbacklight | Monitor Brightness manager | AUR |
-| Skippy-XD | Window Switcher | Yaourt |
-| Lumiere | GTK Theme | Yaourt |
-| Paper Theme | GTK Theme | Yaourt |
-| Paper Icons | GTK Icons | Yaourt |
-| Anaconda | Python Distribution | Online |
-| Node.js | NodeJS Distribution | Yaourt |
-| Visual Studio Code | Coding IDE | Yaourt |
-| Sublime 3 (`sublime-text-dev`) | Text Editor | Yaourt |
+*Browser.* Firefox with custom start/new tab pages.
+![Firefox](.screens/02-firefox.png)
 
+Office.
+![LibreOffice, Zathura](.screens/05-office.png)
 
-##### Directory Layout
-
-```
-.
-├── bin
-│   └── .local
-│       └── bin
-│           ├── bootstrap
-│           │   └── aur-pkglist.txt
-│           ├── colors
-│           │   ├── blocks1
-│           │   ├── hex
-│           │   ├── hex-block
-│           │   ├── panes
-│           │   └── spectrum
-│           ├── dmenu-launcher.sh
-│           ├── dmenu.sh
-│           └── install-stow.sh
-├── code
-│   └── .config
-│       └── Code
-│           └── User
-│               ├── keybindings.json
-│               └── settings.json
-├── compton
-│   └── .config
-│       └── compton
-│           └── compton.conf
-├── conky
-│   └── .config
-│       └── conky
-│           └── conky.conf
-├── dunst
-│   └── .config
-│       └── dunst
-│           └── dunstrc
-├── gtk
-│   ├── .config
-│   │   └── gtk-3.0
-│   │       └── settings.ini
-│   └── .gtkrc-2.0
-├── home
-│   ├── .bashrc
-│   ├── .tmux.conf
-│   ├── .Xmodmap
-│   └── .Xresources
-├── i3
-│   └── .config
-│       └── i3
-│           ├── config
-│           └── i3status.conf
-├── jupyter
-│   └── .jupyter
-│       └── custom
-│           ├── custom.css
-│           └── custom.js
-├── mozilla
-├── neofetch
-│   └── .config
-│       └── neofetch
-│           └── config.conf
-├── pcmanfm
-│   └── .config
-│       └── pcmanfm
-│           └── default
-│               └── pcmanfm.conf
-├── README.md
-├── sublime
-│   └── .config
-│       └── sublime-text-3
-│           └── Packages
-│               └── User
-│                   ├── Default (Linux).sublime-keymap
-│                   └── Preferences.sublime-settings
-├── tree.txt
-├── vim
-│   ├── .vim
-│   │   └── colors
-│   │       └── termscheme.vim
-│   └── .vimrc
-├── wallpapers
-│   └── Pictures
-│       └── patterns
-│           ├── congruent_pentagon.png
-│           ├── darkness.png
-│           ├── hypnotize.png
-│           ├── low_contrast_linen.png
-│           ├── memphis-colorful.png
-│           ├── old_map.png
-│           ├── ps_neutral.png
-│           ├── pw_maze_white.png
-│           ├── sativa.png
-│           ├── topography.png
-│           └── wormz.png
-└── zathura
-    └── .config
-        └── zathura
-            └── zathurarc
-```
+Launchers.
+![Applications](.screens/06-launcher2.png)
+![Configs](.screens/06-launcher1.png)
