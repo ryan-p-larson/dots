@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ROFI_OPTIONS=(-theme $HOME/.config/rofi/rofi_full -m 0 -fullscreen)
+
+exec rofi "${ROFI_OPTIONS[@]}" -show-icons -show drun \
+    -display-drun " " \
+    -display-run "  " \
+    -display-window "  " \
+    -display-ssh "  "
