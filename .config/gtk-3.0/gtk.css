@@ -1,0 +1,17 @@
+.thunar #back,
+.thunar #forward,
+.thunar #open-parent,
+.thunar #open-home {
+    -gtk-icon-transform: scale(0.4);
+}
+
+GtkScrolledWindow .undershoot.top,
+GtkScrolledWindow .undershoot.top:backdrop,
+GtkScrolledWindow .undershoot.bottom,
+GtkScrolledWindow .undershoot.bottom:backdrop,
+GtkScrolledWindow .undershoot.left,
+GtkScrolledWindow .undershoot.left:backdrop,
+GtkScrolledWindow .undershoot.right,
+GtkScrolledWindow .undershoot.right:backdrop {
+    background-color: transparent;
+}
