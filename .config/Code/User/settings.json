@@ -1,0 +1,36 @@
+{
+    "workbench.colorTheme": "Material Theme Darker",
+    // Hide bars
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": false,
+    // Code HUD Map
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.renderCharacters": false,
+    // Editor setting
+    "editor.renderIndentGuides": false,
+    "window.zoomLevel": -1,
+    // Statusbar
+    "workbench.statusBar.feedback.visible": false,
+    "materialTheme.fixIconsRunning": false,
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "materialTheme.autoApplyIcons": true,
+    "workbench.colorCustomizations": {},
+    "materialTheme.accentPrevious": "",
+    "editor.fontFamily": "'Roboto Mono Medium', monospace",
+    "explorer.confirmDelete": false,
+    "alignment.indentBase": "activeline",
+    "editor.rulers": [
+        80, 120
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "zenMode.hideTabs": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "python.linting.pylintEnabled": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "zenMode.fullScreen": false,
+    "editor.lineNumbers": "interval",
+    "editor.roundedSelection": false
+}
