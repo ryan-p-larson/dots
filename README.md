@@ -2,25 +2,6 @@
 
 *Macbook Pro (2011)*
 
-### Installed Programs
-
-| | |
-|---|---|
-| OS | Arch Linux |
-| Window Manager | I3 |
-| Compositor | Compton |
-| Terminal | URxvt |
-| Terminal Font | Gohu Font @ `11px, -4 letterSpacing` |
-| Info | neofetch |
-| File Manager | Thunar |
-| Notifications | Dunst |
-| GTK[2/3] Theme | Materia-dark-compact |
-| GTK[2/3] Icons | Paper |
-| Status Bar | Polybar |
-| Launcher | Rofi |
-| PDF Viewer | Zathura |
-| Editor | VS Code, Vim |
-
 ### Preview
 
 Clean.
@@ -41,3 +22,25 @@ Office.
 Launchers.
 ![Applications](.screens/06-launcher2.png)
 ![Configs](.screens/06-launcher1.png)
+
+
+### Installed Programs
+
+| | |
+|---|---|
+| OS | Arch Linux |
+| Window Manager | I3 |
+| Compositor | Compton |
+| Terminal | URxvt |
+| Terminal Font | Gohu Font @ `11px, -4 letterSpacing` |
+| Shell | zsh |
+| Prompt | blox-theme-zsh |
+| Info | neofetch |
+| File Manager | Thunar |
+| Notifications | Dunst |
+| GTK[2/3] Theme | Materia-dark-compact |
+| GTK[2/3] Icons | Paper |
+| Status Bar | Polybar |
+| Launcher | Rofi |
+| PDF Viewer | Zathura |
+| Editor | VS Code, Vim |
